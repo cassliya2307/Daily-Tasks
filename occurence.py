@@ -5,3 +5,4 @@ def occurence_of_each_character_in_a_string(strings):
             new_list.append(string)
     return new_list
 
+print(occurence_of_each_character_in_a_string("hello world"))
