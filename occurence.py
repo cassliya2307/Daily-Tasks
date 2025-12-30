@@ -1,8 +1,12 @@
-def occurence_of_each_character_in_a_string(strings):
-    new_list = []
-    for string in strings:
-        if string not in new_list:
-            new_list.append(string)
-    return new_list
 
-print(occurence_of_each_character_in_a_string("hello world"))
+def count_occurrence(characters):
+    character = characters.lower()
+    occurrence = 0
+    for index in range(len(character) - 1):
+        count = 0
+        for char in character:
+            if(character[index] == char):
+                count+= 1
+                if count > 1:
+                    occurrence += 1
+    return occurrence
